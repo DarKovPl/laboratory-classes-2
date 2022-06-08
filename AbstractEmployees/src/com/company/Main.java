@@ -20,8 +20,7 @@ public class Main {
         System.out.println("Gross sales is " + employee.getCommissionRate());
         System.out.println("Commision rate is " + employee.getGrossSales());
 
-        BaseEmployee baseEmployee = new BaseEmployee ("Inny","Inny",6666.00, 0.4, 1234);
-        CommissionEmployee employee2 = baseEmployee;
+        CommissionEmployee employee2 = new BaseEmployee ("Inny","Inny",6666.00, 0.4, 1234);
         System.out.println("EARNINGS "+ employee2.earnings());
 
         Payable[] payableObjects = new Payable[4];

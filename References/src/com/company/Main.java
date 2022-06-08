@@ -18,15 +18,13 @@ public class Main {
 
         int[] myIntArray = new int[5];
 
-        int[] anotherArray = myIntArray;
-
         System.out.println("myIntArray" + Arrays.toString(myIntArray));
-        System.out.println("anotherArray" + Arrays.toString(anotherArray));
+        System.out.println("anotherArray" + Arrays.toString(myIntArray));
 
-        anotherArray[0] = 1;
+        myIntArray[0] = 1;
 
         System.out.println("after change myIntArray" + Arrays.toString(myIntArray));
-        System.out.println("after change anotherArray" + Arrays.toString(anotherArray));
+        System.out.println("after change anotherArray" + Arrays.toString(myIntArray));
 
 
     }

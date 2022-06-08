@@ -2,14 +2,10 @@ package com.company;
 
 public class Invoice implements Payable {
 
-    private String partNumber;
-    private String partDescription;
-    private int quantity;
-    private double pricePerItem;
+    private final int quantity;
+    private final double pricePerItem;
 
     public Invoice(String partNumber, String partDescription, int quantity, double pricePerItem) {
-        this.partNumber = partNumber;
-        this.partDescription = partDescription;
         if(quantity < 0) {
             throw new IllegalArgumentException("Quantity must be >=0");
         }
